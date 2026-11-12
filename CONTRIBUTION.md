@@ -218,6 +218,29 @@ These are known design boundaries of the current implementation:
 - Operational observability is currently provided through standard logging and
   the health endpoint.
 
+## Planned Trend Forecasting Capability
+
+The next planned capability is a personalized trend-forecasting pipeline for
+each creator. It will use the genres detected from the creator's existing
+videos to forecast likely future trends and generate catchy hooks for those
+future opportunities.
+
+The planned flow is:
+
+1. Collect the genre or genres identified for each video belonging to a user.
+2. Support multiple genres per video instead of forcing every video into one
+   category.
+3. Analyze genre frequency, combinations, changes over time, and emerging
+   patterns.
+4. Forecast the trends most likely to be relevant to that creator in the
+   future.
+5. Generate concise, attention-grabbing hooks aligned with each forecasted
+   trend.
+6. Return the forecast and suggested hooks as user-specific results.
+
+This functionality is planned for the next implementation phase and is not
+part of the currently deployed prediction flow yet.
+
 ## Files Added
 
 - `.dockerignore`
